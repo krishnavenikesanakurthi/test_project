@@ -1,3 +1,4 @@
+
 view: order {
 derived_table: {
   sql: select Order_id, status, min(Date(created_date)) as first_order
@@ -17,11 +18,5 @@ dimension_group: created_date{
   type: time
   timeframes: [date,month,year, week]
   sql: ${TABLE}.`Created date`;;
-
-}
-
-measure: count {
-  type: count
-  drill_fields: [Order_id]
-}
-}
+  }
+  }

@@ -3,7 +3,6 @@ view: orders_derived_table {
   derived_table: {
     sql: select Order_id, status, min(Date(created_date)) as first_order
       from order;;
-    sql_trigger_value: select current_date() ;;
   }
 
   dimension: order_id {

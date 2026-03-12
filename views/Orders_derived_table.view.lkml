@@ -3,6 +3,8 @@ view: orders_derived_table {
   derived_table: {
     sql: select Order_id, status, min(Date(created_date)) as first_order
       from order;;
+
+  datagroup_trigger: test_datagroup
   }
 
   dimension: order_id {

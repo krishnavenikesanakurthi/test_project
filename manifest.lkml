@@ -10,3 +10,10 @@ remote_dependency: thelook_project{
   url: "https://github.com/SaltyZains/Test-68275101"
   ref: "master"
 }
+constant: pi {
+  value: "0.18"
+}
+#localization_settings: {
+ # default_locale: "en"
+  #localization_level: permissive
+#}

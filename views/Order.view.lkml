@@ -15,4 +15,8 @@ dimension_group: created_date{
   timeframes: [date,month,year, week]
   sql: ${TABLE}.`Created date`;;
   }
+  measure: count {
+    type: count
+  drill_fields: [Order_id,status]
+  }
   }

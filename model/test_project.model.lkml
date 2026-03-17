@@ -10,10 +10,6 @@ datagroup: test_datagroup {
 persist_with: test_datagroup
 
 explore: order{
-  join: orders_derived_table {
-    type: left_outer
-    relationship: one_to_many
-    sql_on: ${order.Order_id}= ${orders_derived_table.order_id} ;;
-  }
+
 
 }

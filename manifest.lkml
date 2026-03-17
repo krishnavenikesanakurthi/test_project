@@ -6,10 +6,7 @@ project_name: "test_project"
 # local_dependency: {
 #   project: "name_of_other_project"
 # }
-remote_dependency: thelook_project{
-  url: "https://github.com/SaltyZains/Test-68275101"
-  ref: "master"
-}
+
 constant: pi {
   value: "0.18"
 }
